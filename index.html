@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Misión SISE · EP · Llave 2</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sise:#ff0e49;
+  --dark:#241f21;
+  --soft:#fff1f5;
+  --gray:#f6f4f5;
+  --line:#e9e2e5;
+}
+*{box-sizing:border-box}
+body{margin:0;background:#eee9eb;color:var(--dark);font:16px Barlow,Arial,sans-serif}
+.wrap{max-width:1100px;margin:24px auto;background:#fff;min-height:650px;overflow:hidden;border-radius:18px;box-shadow:0 12px 35px #241f2115}
+.top{background:var(--dark);color:#fff;padding:16px 34px;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.logo{font:800 31px 'Barlow Condensed',sans-serif;color:var(--sise);letter-spacing:.5px}
+.top small{letter-spacing:2px;font-weight:700;font-size:12px}
+.screen{display:none;padding:42px 6%;animation:fade .3s ease}.screen.active{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.tag{font-weight:800;color:var(--sise);text-transform:uppercase;letter-spacing:1.8px;font-size:13px}
+h1,h2,h3{font-family:'Barlow Condensed','Arial Narrow',sans-serif;line-height:1.04}
+h1{font-size:clamp(46px,6.5vw,78px);margin:14px 0 16px}
+h2{font-size:clamp(34px,5vw,48px);margin:12px 0 18px}h3{font-size:25px;margin:0 0 10px}
+.lead{font-size:19px;line-height:1.52;max-width:720px}
+.hero{display:grid;grid-template-columns:1.25fr .75fr;gap:34px;align-items:center;min-height:455px}
+.keybox{background:var(--soft);border-radius:28px;padding:34px 20px;text-align:center;border:1px solid #ffd5e1}
+.keyicon{font-size:110px;line-height:1;transform:rotate(-18deg);filter:drop-shadow(0 10px 10px #ff0e4930);margin-bottom:14px}
+.pill{display:inline-block;background:var(--dark);color:#fff;border-radius:6px;padding:8px 15px;font-size:13px;font-weight:700;letter-spacing:1px}
+.accent{color:var(--sise)}
+.notice{background:var(--soft);border-left:5px solid var(--sise);padding:16px 18px;border-radius:0 9px 9px 0;line-height:1.5;margin-top:20px}
+button{border:0;background:var(--sise);color:white;font:700 18px 'Barlow Condensed',sans-serif;padding:14px 28px;border-radius:8px;cursor:pointer}button:hover{filter:brightness(.94)}button.secondary{background:var(--dark)}
+.action{display:flex;gap:12px;align-items:center;margin-top:26px;flex-wrap:wrap}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}.panel{background:var(--gray);padding:22px;border-radius:12px}.panel p{line-height:1.55;margin:0}
+.steps{display:grid;grid-template-columns:1fr 1fr;gap:10px}.step{border:1px solid var(--line);border-radius:10px;padding:13px 14px;line-height:1.42;background:#fff}.step b{color:var(--sise)}
+.deliver{background:var(--dark);color:#fff;padding:22px;border-radius:12px}.deliver ul{margin:9px 0 0;padding-left:20px;line-height:1.62}
+.meta{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 4px}.badge{background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 11px;font-size:13px;font-weight:700}.badge strong{color:var(--sise)}
+.footer{border-top:1px solid #eee;padding:14px 34px;display:flex;justify-content:space-between;font-size:13px;color:#777}
+.screen2{padding-top:29px}.screen2 .lead{font-size:16px;max-width:none}.screen2 h2{font-size:40px}.screen2 h3{font-size:23px}
+@media(max-width:720px){.wrap{margin:0;border-radius:0}.top{padding:14px 20px}.screen{padding:27px 20px}.hero,.grid2,.steps{grid-template-columns:1fr}.hero{gap:18px}.keybox{padding:20px}.keyicon{font-size:78px}.screen2 h2{font-size:34px}.footer{padding:14px 20px;gap:12px}.footer span:last-child{text-align:right}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<header class="top">
+  <div class="logo">SISE»</div>
+  <small>MISIÓN SISE</small>
+</header>
+
+<section class="screen active" id="s1">
+  <div class="hero">
+    <div>
+      <div class="tag">Sesión 4 · Evaluación Parcial</div>
+      <h1>PREPÁRATE PARA OBTENER TU <span class="accent">SEGUNDA LLAVE</span></h1>
+      <span class="pill">LLAVE 02 · RESOLUCIÓN DE CONFLICTOS</span>
+      <p class="lead">Resolver un conflicto no significa evitarlo, sino comprender qué lo originó, comunicarte con criterio y construir acuerdos. En esta segunda llave analizarás una situación real y plantearás una solución profesional orientada al trabajo en equipo.</p>
+      <div class="notice">
+        <strong>Para obtener esta llave, debes aprobar la siguiente evaluación:</strong><br>
+        <b>EP – Matriz de propuesta de solución</b>
+      </div>
+      <div class="meta">
+        <span class="badge"><strong>EP</strong> · Evaluación Parcial</span>
+        <span class="badge"><strong>25 %</strong> de la nota final</span>
+      </div>
+      <div class="action"><button onclick="go(2)">CONOCE TU EVALUACIÓN »</button></div>
+    </div>
+    <div class="keybox">
+      <div class="keyicon" aria-hidden="true">🗝️</div>
+      <h3>LLAVE 2</h3>
+      <div class="tag">RESOLUCIÓN DE CONFLICTOS</div>
+      <p>Analiza un quiebre de comunicación, reconoce su impacto y plantea una solución asertiva, persuasiva y orientada al logro de acuerdos.</p>
+    </div>
+  </div>
+</section>
+
+<section class="screen screen2" id="s2">
+  <div class="tag">EP · Llave 02 · Resolución de Conflictos</div>
+  <h2>Matriz de propuesta de solución</h2>
+  <div class="meta">
+    <span class="badge"><strong>Sesión:</strong> 4</span>
+    <span class="badge"><strong>Peso:</strong> 25 %</span>
+  </div>
+
+  <div class="notice">
+    <strong>Tu desafío</strong><br>
+    Analiza una situación real o cercana en la que se haya producido un quiebre de comunicación o un conflicto. Identifica qué ocurrió, qué consecuencias puede tener para el trabajo en equipo y tu empleabilidad, y plantea una propuesta de solución utilizando comunicación asertiva, persuasiva y coordinación con otras personas.
+  </div>
+
+  <div class="grid2" style="margin-top:18px">
+    <div class="panel">
+      <h3>¿Qué aprenderás?</h3>
+      <p>Analizarás críticamente una situación de conflicto vinculada con tu propio desempeño, reconocerás sus efectos en el equipo y la empleabilidad, y plantearás una solución argumentada mediante comunicación persuasiva, asertiva y orientada al logro de acuerdos.</p>
+    </div>
+    <div class="panel">
+      <h3>¿Cómo lo harás?</h3>
+      <div class="steps">
+        <div class="step"><b>01.</b> Revisa tu EA1 y las acciones comunicativas que propusiste para fortalecer tu empleabilidad.</div>
+        <div class="step"><b>02.</b> Selecciona una situación real o cercana con un quiebre de comunicación, desacuerdo, respuesta impulsiva o dificultad de coordinación.</div>
+        <div class="step"><b>03.</b> Describe la situación de manera concreta e identifica el momento en que se produjo el quiebre.</div>
+        <div class="step"><b>04.</b> Identifica el conflicto generado y explica sus consecuencias en el equipo, clima laboral, objetivos o perfil profesional.</div>
+        <div class="step"><b>05.</b> Analiza la situación con las 5C: comunicación, colaboración, coordinación, confianza y compromiso.</div>
+        <div class="step"><b>06.</b> Formula una propuesta de solución utilizando comunicación persuasiva y asertiva: qué dirías, cómo lo dirías y qué resultado buscarías.</div>
+        <div class="step"><b>07.</b> Define una acción personal de mejora que puedas aplicar en situaciones similares.</div>
+        <div class="step"><b>08.</b> Revisa que tu propuesta sea viable, respetuosa, orientada a la solución y coherente con tu empleabilidad.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid2" style="margin-top:18px">
+    <div class="deliver">
+      <h3>Producto a presentar</h3>
+      <ul>
+        <li>Matriz de análisis crítico de empleabilidad.</li>
+        <li>Situación de quiebre de comunicación.</li>
+        <li>Conflicto generado.</li>
+        <li>Consecuencias para el trabajo en equipo, desempeño o permanencia laboral.</li>
+        <li>Análisis de las 5C del trabajo en equipo.</li>
+        <li>Propuesta de solución utilizando comunicación persuasiva y asertiva.</li>
+        <li>Acción personal de mejora.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h3>Complemento de la sesión</h3>
+      <p>La sesión 4 también propone un video corto de 1 minuto sobre las 5C del trabajo en equipo. Puede mantenerse como evidencia complementaria o formativa, mientras que la matriz constituye la evidencia principal de la EP.</p>
+      <div class="notice" style="margin-top:14px">
+        <strong>Recuerda</strong><br>
+        Tu propuesta debe mostrar cómo pasar del conflicto a una solución concreta, cuidando la comunicación, la coordinación y el logro de acuerdos.
+      </div>
+      <p style="margin-top:14px"><strong>¿Qué sigue?</strong><br>Al aprobar la EP, habrás completado tu segunda llave de Misión SISE y podrás continuar avanzando en la ruta del curso.</p>
+    </div>
+  </div>
+
+  <div class="action">
+    <button class="secondary" onclick="go(1)">« VOLVER AL INICIO</button>
+    <a href="https://da-ite.github.io/Misi-n-SISE_T.COMUNI/" target="_blank" rel="noopener noreferrer" style="text-decoration:none">
+      <button type="button">INGRESA TU LLAVE »</button>
+    </a>
+    <span style="font-size:13px;color:#777">La entrega y calificación se realizan en la actividad correspondiente de Canvas.</span>
+  </div>
+</section>
+
+<footer class="footer">
+  <span>Instituto SISE – Grupo EducaD</span>
+  <span id="counter">PANTALLA 1 DE 2</span>
+</footer>
+</main>
+
+<script>
+function go(n){
+  document.querySelectorAll('.screen').forEach(x=>x.classList.remove('active'));
+  document.getElementById('s'+n).classList.add('active');
+  document.getElementById('counter').textContent='PANTALLA '+n+' DE 2';
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+</script>
+</body>
+</html>
